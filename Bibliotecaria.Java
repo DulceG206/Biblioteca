@@ -13,7 +13,7 @@ public class Bibliotecaria {
     public void restaurar() {  
     }
     public void darLibros() {
-            System.out.print("Toma este libro");
+            
 
     }
  }

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.function.IntConsumer;
+
 public class Main {
 public static void main(String[] args) {
 
@@ -47,8 +47,8 @@ public static void main(String[] args) {
     System.out.print("Ingrese el año de publicación de la enciclopedia: ");
     int ano = scanner.nextInt();
     scanner.nextLine();
-    bibliotecaController.pedirEnciclopedia(nombre, genero, ano);
-    System.out.print(pedirEnciclopedia); 
+    String resultado = bibliotecaController.pedirEnciclopedia(nombre, genero, ano);
+    System.out.print(resultado); 
     break;
 
     case 3:
@@ -57,8 +57,8 @@ public static void main(String[] args) {
     System.out.print("Ingrese la fecha de publicación del periódico: ");
     int fecha = scanner.nextInt();
     scanner.nextLine();
-    bibliotecaController.pedirPeriodico(editorial, fecha);
-    System.out.print(pedirPeriodico);
+    String resultado2 = bibliotecaController.pedirPeriodico(editorial, fecha);
+    System.out.print(resultado2);
     break;
 
     case 4:
@@ -69,8 +69,8 @@ public static void main(String[] args) {
     System.out.print("Ingrese la edición del libro: ");
     int edicion = scanner.nextInt();
     scanner.nextLine();
-    bibliotecaController.pedirPeriodico(editorial, fecha);
-    System.out.print(pedirLibro);
+    String resultado3 = bibliotecaController.pedirPeriodico(editorial, fecha);
+    System.out.print(resultado3);
     break;
     default:
     System.out.println("Opción inválida.");

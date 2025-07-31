@@ -15,12 +15,12 @@ public class Lector {
     }
 
     public void pideLibro(String nombreLibro) {  
-        System.out.print("Necesito el libro: " + nombreLibro);
+       
         
     }
     
     public void estudiar() {
-        System.out.println("El lector está estudiando");
+        
     }
 
 }

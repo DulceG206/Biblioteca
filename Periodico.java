@@ -9,7 +9,7 @@ public class Periodico{
     }
 
     public void darNoticia() {  
-        System.out.print("Infórmate de lo que sucede hoy");
+       
     }
     public void ejercitarCerebro() {
     }

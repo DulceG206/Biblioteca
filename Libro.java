@@ -11,10 +11,10 @@ public class Libro{
     }
 
     public void ensenar() {  
-        System.out.print("El libro nos ensena");
+        
     }
     public void citarlo() {
-            System.out.print("Las referencias del libro son: ");
+            
 
     }
 }
