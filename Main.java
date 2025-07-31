@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.function.IntConsumer;
 public class Main {
 public static void main(String[] args) {
 
@@ -12,7 +13,7 @@ public static void main(String[] args) {
     System.out.println("1. Registrar Lector");
     System.out.println("2. Registrar bibliotecaria");
     System.out.println("3. Pedir Enciclopedia");
-    System.out.println("4. Preguntar algo a la bibliotecaria");
+    System.out.println("4. Pedir periódico");
     System.out.println("5. Salir de la biblioteca");
 
     System.out.print("Elija una opción del menu ");
@@ -39,7 +40,38 @@ public static void main(String[] args) {
     bibliotecaController.crearBibliotecaria(nombre, turno, edad);
     break;
     case 2:
-    lector.estudiar();
+    System.out.print("Ingrese el nombre de enciclopedia que desea: ");
+    String nombre = scanner.nextLine();
+    System.out.print("Ingrese el genero de la enciclopedia: ");
+    String genero = scanner.nextLine();
+    System.out.print("Ingrese el año de publicación de la enciclopedia: ");
+    int ano = scanner.nextInt();
+    scanner.nextLine();
+    bibliotecaController.pedirEnciclopedia(nombre, genero, ano);
+    break;
+    case 3:
+    System.out.print("Ingrese la editorial del periódico que desea: ");
+    String editorial = scanner.nextLine();
+    System.out.print("Ingrese la fecha de publicación del periódico: ");
+    int fecha = scanner.nextInt();
+    scanner.nextLine();
+    bibliotecaController.pedirPeriodico(editorial, fecha);
+    break;
+
+    case 4:
+    System.out.print("Ingrese nombre del libro que desea: ");
+    String nombre = scanner.nextLine();
+    System.out.print("Ingrese el nombre del autor del libro: ");
+    String autor = scanner.nextLine();
+    System.out.print("Ingrese la edición del libro: ");
+    int edicion = scanner.nextInt();
+    scanner.nextLine();
+    bibliotecaController.pedirPeriodico(editorial, fecha);
+    break;
+
+
+
+
     break;
     default:
     System.out.println("Opción inválida.");
