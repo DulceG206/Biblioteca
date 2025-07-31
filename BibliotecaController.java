@@ -22,22 +22,22 @@ public class BibliotecaController {
     return true;
      
 }
-  public Void pedirEnciclopedia(String nombre, String genero, int ano) {
+  public String pedirEnciclopedia(String nombre, String genero, int ano) {
     enciclopedia = new Enciclopedia(nombre, genero, ano); 
-    System.out.print("Esta es la enciclopedia que necesita");
+    return "Esta es la enciclopedia que necesita: " + nombre + genero + ano;
     
      
 }
-  public Void pedirPeriodico(String editorial, int fecha) {
+  public String pedirPeriodico(String editorial, int fecha) {
     periodico = new Periodico(editorial, fecha); 
-    System.out.print("Este es el periódico que solicitó");
+    return "Este es el periódico que solicitó: " + editorial + fecha; 
     
      
 }
 
-  public Void pedirLibro(String nombre, String autor, int edicion) {
+  public String pedirLibro(String nombre, String autor, int edicion) {
     libro = new Libro(nombre, autor, edicion); 
-    System.out.print("Este es el periódico que solicitó");
+    return "Este es el periódico que solicitó:" + nombre + autor + edicion;
     
      
 }

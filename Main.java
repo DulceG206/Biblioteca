@@ -48,7 +48,9 @@ public static void main(String[] args) {
     int ano = scanner.nextInt();
     scanner.nextLine();
     bibliotecaController.pedirEnciclopedia(nombre, genero, ano);
+    System.out.print(pedirEnciclopedia); 
     break;
+
     case 3:
     System.out.print("Ingrese la editorial del periódico que desea: ");
     String editorial = scanner.nextLine();
@@ -56,6 +58,7 @@ public static void main(String[] args) {
     int fecha = scanner.nextInt();
     scanner.nextLine();
     bibliotecaController.pedirPeriodico(editorial, fecha);
+    System.out.print(pedirPeriodico);
     break;
 
     case 4:
@@ -67,11 +70,7 @@ public static void main(String[] args) {
     int edicion = scanner.nextInt();
     scanner.nextLine();
     bibliotecaController.pedirPeriodico(editorial, fecha);
-    break;
-
-
-
-
+    System.out.print(pedirLibro);
     break;
     default:
     System.out.println("Opción inválida.");
