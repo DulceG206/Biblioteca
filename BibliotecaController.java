@@ -2,11 +2,11 @@
 
 public class BibliotecaController {
 
-    Lector lector;
-    Bibliotecaria bibliotecaria; 
-    Enciclopedia enciclopedia; 
-    Periodico periodico; 
-    Libro libro; 
+    private Lector lector;
+    private Bibliotecaria bibliotecaria; 
+    private Enciclopedia enciclopedia; 
+    private Periodico periodico; 
+    private Libro libro; 
 
     public BibliotecaController () {
 
