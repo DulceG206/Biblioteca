@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+import biblioteca1.model.Lector;
 public class Main {
 public static void main(String[] args) {
 
@@ -14,17 +16,20 @@ public static void main(String[] args) {
 
 
     while (true) {
-    System.out.println("1. Solicitar un libro ");
+    System.out.println("1. Solicitar un libro");
     System.out.println("2. Estudiar en la biblioteca");
-    
-    System.out.print("Elija una opción del manu ");
+    System.out.println("3. Investigar una noticia");
+    System.out.println("4. Preguntar algo a la bibliotecaria");
+    System.out.println("5. Salir de la biblioteca");
+
+    System.out.print("Elija una opción del menu ");
     int opcion = scanner.nextInt();
     scanner.nextLine();
 
         switch (opcion) {
     case 1:
     System.out.print("Ingrese el nombre del libro que desea: ");
-    String libro = scanner.nextLine();
+    String libroDeseado = scanner.nextLine();
     scanner.nextLine();
     lector.pideLibro(libro);
     break;

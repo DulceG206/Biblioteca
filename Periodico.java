@@ -1,3 +1,4 @@
+
 public class Periodico{
     public String editorial;
     public int fecha;
@@ -7,7 +8,7 @@ public class Periodico{
         this.fecha = fecha;
     }
 
-    public String darNoticia() {  
+    public void darNoticia() {  
         System.out.print("Infórmate de lo que sucede hoy");
     }
     public void ejercitarCerebro() {
